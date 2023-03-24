@@ -7,11 +7,14 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/shape"
-        android:roundIcon="@drawable/shape__1_"
         android:label="@string/app_name"
+        android:roundIcon="@drawable/shape__1_"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedPractika"
         tools:targetApi="31">
+        <activity
+            android:name=".Onboard"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
