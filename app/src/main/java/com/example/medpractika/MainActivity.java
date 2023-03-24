@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -14,15 +15,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                nextPage();
             }
-        }, 0, 3000);
+        }, 3000);
     }
-    public void nextPage(){
+
+    public void nextPage() {
         Intent intent = new Intent(MainActivity.this, Onboard.class);
         startActivity(intent);
     }
