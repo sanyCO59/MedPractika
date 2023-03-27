@@ -10,7 +10,7 @@
     <translate
         android:duration="300"
         android:fillAfter="true"
-        android:startOffset="300"
+        android:startOffset="0"
         android:toXDelta="-100%" />
 
 </set>

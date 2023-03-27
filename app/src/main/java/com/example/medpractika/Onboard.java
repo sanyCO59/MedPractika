@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -48,5 +49,7 @@ public class Onboard extends AppCompatActivity {
     }
 
     public void next3(View view) {
+        Intent intent = new Intent(Onboard.this, Authorization.class);
+        startActivity(intent);
     }
 }
