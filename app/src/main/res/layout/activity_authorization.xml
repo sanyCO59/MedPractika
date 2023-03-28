@@ -13,15 +13,17 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bg"
         android:ems="10"
+        android:fontFamily="@font/lato"
         android:hint="example@mail.ru"
         android:inputType="textEmailAddress"
         android:padding="10sp"
+        android:textColor="#000000"
+        android:textColorHint="#A4000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.47" />
 
     <TextView
         android:id="@+id/textView4"
@@ -77,4 +79,40 @@
             android:textColor="#000000"
             android:textSize="15sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="Или войдите с помощью"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="124dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.185"
+        app:srcCompat="@drawable/but1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button1"
+        android:text="Далее"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
