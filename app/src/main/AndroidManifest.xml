@@ -16,6 +16,9 @@
         android:theme="@style/Theme.MedPractika"
         tools:targetApi="31">
         <activity
+            android:name=".CreatePass"
+            android:exported="false" />
+        <activity
             android:name=".CreateMap"
             android:exported="true" />
         <activity
